@@ -1,3 +1,5 @@
+
+
 document.getElementById("loginForm").addEventListener("submit",(event)=>{
     event.preventDefault()
 })
@@ -36,3 +38,4 @@ function forgotPass(){
         document.getElementById("error").innerHTML = error.message
     });
 }
+
