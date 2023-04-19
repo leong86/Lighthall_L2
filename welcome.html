@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wecome Page</title>
+    <title>Task Tracker</title>
     <link rel="stylesheet" href="./index.css" />
     <link
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -22,17 +22,28 @@
 <body>
     <center><div style="margin:100px">
         <span id="user" class="message">Hello, < email-id ></Email-id></span>
-        <div class="success"><span>Welcome to auth starter, You are successfully loged in!!!</span></div><br/>
+        <div class="success"><span>Welcome! You are successfully loged in!!!</span></div><br/>
+        
         <button class="btn btn-danger" onclick="logout()">Logout</button>
     </div></center>
+
+    <div style="margin:50px">
+        <form onsubmit="addTask(); return false;">
+          <div class="form-group">
+            <label for="task">Task</label>
+            <input type="text" class="form-control" id="task" placeholder="Enter task">
+          </div>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+        <ul id="taskList" class="list-group" style="margin-top: 10px;">
+        </ul>
+    </div>
+    
+    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="task.js"></script>
     <script src="firebase.js"></script>
     <script src="welcome.js"></script>
 </body>
