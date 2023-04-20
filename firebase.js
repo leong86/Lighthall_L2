@@ -1,5 +1,5 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyAYH8zlBLaiSKgvUiltdAweUwErU7mdtb0",
+  apiKey: "AIzaSyAYH8zlBLaiSKgvUiltdAweUwErU7mdtb0",
   authDomain: "lighthalll2.firebaseapp.com",
   databaseURL: "https://lighthalll2-default-rtdb.firebaseio.com",
   projectId: "lighthalll2",
@@ -9,4 +9,6 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
+const auth = firebase.auth();
+const database = firebase.database();

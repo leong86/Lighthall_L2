@@ -6,7 +6,14 @@ firebase.auth().onAuthStateChanged((user)=>{
     }
 })
 
-
-function logout(){
+function logout() {
     firebase.auth().signOut()
-}
+      .then(() => {
+        console.log("User logged out successfully!");
+        // Clear task list
+        document.getElementById("taskList").innerHTML = "";
+      })
+      .catch((error) => {
+        console.error("Error logging out: ", error);
+      });
+  }
