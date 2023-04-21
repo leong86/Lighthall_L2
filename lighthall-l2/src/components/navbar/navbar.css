@@ -1,0 +1,35 @@
+.navbar__container {
+    background: #83bff4;
+    display: flex;
+    gap: 5rem;
+    backdrop-filter: blur(15px);
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    margin: 0.8rem auto 0.8rem;
+    white-space: nowrap;
+  }
+  
+  nav {
+    text-align: center;
+    gap: 5rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0.8rem auto 0.8rem;
+    width: 80%;
+  }
+  
+  
+  /*================ MEDIA QUERIES (MEDIUM DEVICES) =============*/
+  @media screen and (max-width: 1024px) {
+    nav a {
+      display: none;
+    }
+  }
+  /*================ MEDIA QUERIES (SMALL DEVICES) =============*/
+  @media screen and (max-width: 600px) {
+    nav a {
+      display: none;
+    }
+  }

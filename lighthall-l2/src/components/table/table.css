@@ -1,0 +1,9 @@
+.table__container {
+    background: #7c7e7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* or any other width */
+    height: 100px; /* or any other height */
+    margin:auto;
+  }

@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/leong86/Lighthall_L2#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "firebase": "^9.20.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
