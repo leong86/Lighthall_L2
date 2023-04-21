@@ -20,6 +20,7 @@
     ></script>
 </head>
 <body>
+  
     <center><div style="margin:100px">
         <span id="user" class="message">Hello, < email-id ></Email-id></span>
         <div class="success"><span>Welcome! You are successfully loged in!!!</span></div><br/>
@@ -28,13 +29,7 @@
     </div></center>
 
     <div style="margin:50px">
-        <!-- <form onsubmit="addTask(); return false;">
-          <div class="form-group">
-            <label for="task">Task</label>
-            <input type="text" class="form-control" id="task" placeholder="Enter task">
-          </div>
-          <button type="submit" class="btn btn-primary">Add Task</button>
-        </form> -->
+        
         <form>
           <label for="title">Title:</label>
           <input type="text" id="title" name="title"><br>
@@ -55,7 +50,8 @@
           <input type="text" id="delete" name="delete"><br>
           <button type="button" onclick="deleteTask()">Delete task</button>
         </form>
-        <table id="todolist" class="table table-striped">
+
+        <table id="taskList" class="table table-striped">
           <thead>
               <tr>
                   <th scope="col">Title</th>
@@ -64,17 +60,12 @@
                   <th scope="col">Status</th>
               </tr>
           </thead>
-          <tbody id="todolist"></tbody>
+          <tbody id="taskList"></tbody>
       </table>
-        
-        <ul id="taskList" class="list-group" style="margin-top: 10px;">
-        </ul>
+        <!-- <ul id="taskTable" class="list-group" style="margin-top: 10px;">
+        </ul> -->
     </div>
-    <div id="currentTasks"></div>
-
-    
-    
-
+    <!-- <div id="currentTasks"></div> -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="task.js"></script>
